@@ -240,7 +240,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    scenic (1.4.1)
+    scenic (1.6.0)
       activerecord (>= 4.0.0)
       railties (>= 4.0.0)
     selenium-webdriver (3.11.0)
@@ -307,4 +307,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   2.1.4
+   2.2.20
