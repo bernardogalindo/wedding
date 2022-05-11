@@ -1,11 +1,11 @@
 <p><%= @guest.email_safe_salutation %></p>
 
-<p>You recently entered your email address to RSVP on <%= ENV['CANONICAL_HOST'] %>.</p>
+<p>Nos compartiste tu correo para hacer tu RSVP (reservación) en <%= ENV['CANONICAL_HOST'] %>.</p>
 
-<p>If you would like to view or update your RSVP, you can use the following link to get back to it:</p>
+<p>Si deseas ver o actualizar tu RSVP, puedes utilizar el siguiente link:</p>
 <p><%= link_to guest_url(@guest), guest_url(@guest) %></p>
 
-<p>If you have any questions, you can ask us by reply.</p>
+<p>Tienes alguna pregunta puedes responder este correo.</p>
 
 <p>&nbsp;</p>
 <p><%= t :wedding_couple_names %></p>

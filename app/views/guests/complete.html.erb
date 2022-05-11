@@ -2,11 +2,11 @@
   <div class="row">
     <div class="offset-lg-2 col-lg-8">
       <%= render partial: 'leader' %>
-      <h2>Thanks!</h2>
-      <p>We've sent an email confirmation to <tt><%= @guest.email %></tt>.</p>
-      <p>If you don't receive the email within a few minutes, please check your spam folder, and if it's not there <%= mail_to ENV['CONTACT_EMAIL'], 'contact us' %>.</p>
-      <p>The email contains a link that you can use to update your RSVP later if you need to.</p>
-      <p><%= link_to 'Back to the Home Page', root_path %></p>
+      <h2>Gracias!</h2>
+      <p>Te hemos enviado un correo de confirmación a: <tt><%= @guest.email %></tt>.</p>
+      <p>Si no recibes el correo en algunos minutos, por favor revisa la carpeta de spam , si no tienes ningun correo escribenos a:  <%= mail_to ENV['CONTACT_EMAIL'], 'Hola BENALI LOVE' %>.</p>
+      <p>En el correo esta un link para editar y revisar tu reservación.</p>
+      <p><%= link_to 'Veamos la Página de BENALI BODA', root_path %></p>
     </div>
   </div>
 </div>

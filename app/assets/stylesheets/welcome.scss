@@ -4,7 +4,7 @@
 
 #welcome-index-leader {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url("jumbo.jpg") center center no-repeat;
+    image-url("compromiso.jpg") center center no-repeat;
   background-size: cover;
   height: 820px;
 
@@ -32,7 +32,7 @@
 
 #welcome-index-venue-leader {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url("venue.jpg") center center no-repeat;
+    image-url("casa-americas-pista.jpeg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
 
@@ -59,7 +59,7 @@
 
 #welcome-index-wedding-plan-leader {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url("plan.jpg") center center no-repeat;
+    image-url("casa-americas-real-2.jpeg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
 
@@ -83,6 +83,39 @@
     text-align: justify;
   }
 }
+
+#welcome-index-wedding-benali-leader {
+  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+    image-url("benali-love.jpeg") center center no-repeat;
+  background-size: cover;
+  background-position: 50% 30%;
+  margin-top: 5 * $spacer;
+
+  * {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  h1 {
+    padding: 10 * $spacer 0;
+  }
+}
+
+.carousel .carousel-inner{
+  height: 1000px
+}
+.carousel-inner .carousel-item img{
+  min-height:1000px;
+  //prevent it from stretch in screen size < than 768px
+  object-fit:cover;
+}
+
+@media(max-width:768px){
+  .carousel .carousel-inner{
+  //prevent it from adding a white space between carousel and container elements
+  height:auto
+  }
+}
+
 
 #welcome-index-footer {
   background-color: #faebe3;
