@@ -117,10 +117,18 @@
 
   #welcome-index-leader {
     background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-      image-url("compromiso.jpg") top left no-repeat;
+      image-url("compromiso.jpg") 25% 50% no-repeat;
     background-size: cover;
   }
 
+}
+
+@media(max-width: 1400px){
+  #welcome-index-leader {
+    background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+      image-url("compromiso.jpg") 0% 100% no-repeat;
+    background-size: cover;
+  }
 }
 
 
