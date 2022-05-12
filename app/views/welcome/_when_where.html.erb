@@ -10,12 +10,21 @@
         <h2><%= link_to 'wedding.ics' do -%>
           <%= render partial: 'calendar_svg' %>
         <%- end %></h2>
+
         <p>
+        <strong> BENALI DAY </strong><br>
           <strong>7pm &ndash; hasta que el cuerpo aguante</strong><br>
-          <%= t :wedding_date %><br>
+          <%= t :wedding_date %>.<br>
           &nbsp;<br>
         </p>
-        <p><%= link_to 'Agregar a mi Calendario', 'wedding.ics' %></p>
+        <div class="drowpdown calendar-menu">
+          <%= link_to 'Agregar a mi Calendario', '#', data: {toggle: "dropdown"}, id: "dLabel", 'aria-haspopup': "true", 'aria-expanded': "false" %>
+          <div class="dropdown-menu" aria-labelledby="dLabel">
+            <%= link_to 'Agregar a mi Calendario', 'wedding.ics', class: 'dropdown-item' %>
+            <%= link_to 'Tengo Iphone. Agregar a mi Calendario', 'wedding-iphone.ics', class: 'dropdown-item' %>
+            <%= link_to 'Soy libre. Agregar a mi Calendario', 'wedding-waze.ics', class: 'dropdown-item' %>
+          </div>
+        </div>
       </div>
       <div class="col-md-6 text-center">
         <h2><%= link_to @google_maps_url do -%>
@@ -24,9 +33,14 @@
         <p>
           <%= render partial: 'wedding_address' %>
         </p>
-        <p>
-          <%= link_to 'Google Maps', @google_maps_url %>
-        </p>
+        <div class="dropdown">
+          <%= link_to 'Ver en Mapa', '#', data: {toggle: "dropdown"}, id: "dLabel", 'aria-haspopup': "true", 'aria-expanded': "false" %>
+          <div class="dropdown-menu" aria-labelledby="dLabel">
+            <%= link_to 'Google Maps', @google_maps_url, class: 'dropdown-item' %>
+            <%= link_to 'Apple Maps', @apple_maps_url, class: 'dropdown-item' %>
+            <%= link_to 'Waze', @waze_maps_url, class: 'dropdown-item' %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
