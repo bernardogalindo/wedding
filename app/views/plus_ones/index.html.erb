@@ -5,17 +5,14 @@
       <%= render partial: 'guests/rsvp_nav', locals: { active: 2 } %>
 
       <h2>Integrantes de tu familia o Acompañante</h2>
-      <p>Puedes decirnos cuantos vendra de tu familia incluyendo los niños. Si requires un acompañante por favor hazlo saber.
+      <p>Puedes Agregar a los miembros de tu familia incluyendo los niños o tu acompañante. <span>&nbsp;</span><%= link_to 'Agregar familiar / acompañante', new_guest_plus_one_path(@guest), class: 'btn btn-primary', data: { disable_with: 'Agregando...' } %>/p>
       <p>&nbsp;</p>
 
       <% if @plus_ones.any? %>
         <%= render @plus_ones %>
       <% else %>
-        <p>Sin familiares o acompañentes. Voy solo o ellos se van a registrar.</p>
+        <p>Sin familiares o acompañentes. Voy solo o ellos se registran aparte.</p>
       <% end %>
-      <p>
-        <%= link_to 'Agregar familiar / acompañante', new_guest_plus_one_path(@guest), class: 'btn btn-primary', data: { disable_with: 'Agregando...' } %>
-      </p>
 
       <p>&nbsp;</p>
       <p class="guests-buttons">

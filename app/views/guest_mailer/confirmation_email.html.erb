@@ -2,7 +2,7 @@
 
 <% if @guest.attending %>
 <p>Te esperamos!</p>
-<p>Esta es la dirección:</p>
+<p>Esta es la dirección del <strong>Evento</strong>:</p>
 <address><%= render partial: 'application/wedding_address' %></address>
 
 <h3>Tu RSVP(reservación)</h3>
@@ -17,7 +17,7 @@
 <p>Visita la página <%= link_to 'de benali boda', root_url %> para la information, o responde este correo.</p>
 <% else %>
 <p>Como BENALI love sentimos mucho que no puedas acompañarnos. Si cambias de opinion, puedes reservar RSVP en este link:</p>
-<p><%= link_to guest_url(@guest), guest_url(@guest) %></p>
+<p><%= link_to "Reservar! RSVP", guest_url(@guest) %></p>
 <p>Nos vemos pronto!</p>
 <% end %>
 
