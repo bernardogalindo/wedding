@@ -4,14 +4,17 @@
       <%= render partial: 'guests/leader' %>
       <%= render partial: 'guests/rsvp_nav', locals: { active: 2 } %>
 
-      <h2>Integrantes de tu familia o Acompañante</h2>
-      <p>Puedes Agregar a los miembros de tu familia incluyendo los niños o tu acompañante. <span>&nbsp;</span><%= link_to 'Agregar familiar / acompañante', new_guest_plus_one_path(@guest), class: 'btn btn-primary', data: { disable_with: 'Agregando...' } %>/p>
-      <p>&nbsp;</p>
+      <h2 class="card-title">Integrantes de tu familia o Acompañante</h2>
+      <p class="card-tex">Puedes Agregar a los miembros de tu familia incluyendo los niños o tu acompañante. <span>&nbsp;</span>
+      <br />
+      <%= link_to 'Agregar familiar / acompañante', new_guest_plus_one_path(@guest), class: 'btn btn-primary', data: { disable_with: 'Agregando...' } %></p>
 
       <% if @plus_ones.any? %>
         <%= render @plus_ones %>
       <% else %>
-        <p>Sin familiares o acompañentes. Voy solo o ellos se registran aparte.</p>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Sin familiares o acompañentes. Voy solo o ellos se registran aparte.</p>
       <% end %>
 
       <p>&nbsp;</p>
