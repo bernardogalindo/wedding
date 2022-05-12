@@ -6,7 +6,9 @@
       <p>Nos parece que ya hiciste tu reservación RSVP, te hemos enviado un correo electronico para que puedas actualizarla.</p>
       <p>Por favor revisa tu correo electronico <tt><%= @guest.email %></tt> incluyendo la carpeta de spam!</p>
       <p>Si no recibiste el correo, envianos un correo por favor a <%= mail_to ENV['CONTACT_EMAIL'], 'Hola BENALI Love' %>.</p>
-      <%= image_tag 'novios-renueva-rsvp.jpg', class: "rounded mx-auto d-block", alt: 'Vamos a Festejar'%>
+      <figure class="figure">
+        <%= image_tag 'novios-renueva-rsvp.jpg', class: "rounded mx-auto d-block figure-img img-fluid", alt: 'Vamos a Festejar'%>
+         <figcaption class="figure-caption">El amor nunca es imposible solo debes sentirlo</figcaption>
     </div>
   </div>
 </div>
