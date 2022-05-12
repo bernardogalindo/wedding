@@ -123,7 +123,7 @@
 
 }
 
-@media(max-width: 1400px){
+@media(min-width: 1400px){
   #welcome-index-leader {
     background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
       image-url("compromiso.jpg") 0% 100% no-repeat;
